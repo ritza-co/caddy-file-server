@@ -1,0 +1,7 @@
+:{env.PORT}
+encode zstd gzip
+root * {env.PERSISTENT_STORAGE_DIR}
+header Access-Control-Allow-Methods "POST, GET, OPTIONS"
+header Access-Control-Allow-Headers "*"
+header Access-Control-Allow-Origin "*"
+file_server browse
